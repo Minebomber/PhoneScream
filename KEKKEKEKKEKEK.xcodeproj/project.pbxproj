@@ -12,6 +12,8 @@
 		FB8560F41ED1CEA000B1B8C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8560F21ED1CEA000B1B8C1 /* Main.storyboard */; };
 		FB8560F61ED1CEA000B1B8C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB8560F51ED1CEA000B1B8C1 /* Assets.xcassets */; };
 		FB8560F91ED1CEA000B1B8C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB8560F71ED1CEA000B1B8C1 /* LaunchScreen.storyboard */; };
+		FB8561021ED1CED000B1B8C1 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB8561011ED1CED000B1B8C1 /* CoreMotion.framework */; };
+		FB8561041ED1DF8900B1B8C1 /* scream.aiff in Resources */ = {isa = PBXBuildFile; fileRef = FB8561031ED1DF8900B1B8C1 /* scream.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FB8560F51ED1CEA000B1B8C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB8560F81ED1CEA000B1B8C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB8560FA1ED1CEA000B1B8C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB8561011ED1CED000B1B8C1 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		FB8561031ED1DF8900B1B8C1 /* scream.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = scream.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB8561021ED1CED000B1B8C1 /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				FB8560ED1ED1CEA000B1B8C1 /* KEKKEKEKKEKEK */,
 				FB8560EC1ED1CEA000B1B8C1 /* Products */,
+				FB8561001ED1CECF00B1B8C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +60,7 @@
 		FB8560ED1ED1CEA000B1B8C1 /* KEKKEKEKKEKEK */ = {
 			isa = PBXGroup;
 			children = (
+				FB8561031ED1DF8900B1B8C1 /* scream.aiff */,
 				FB8560EE1ED1CEA000B1B8C1 /* AppDelegate.swift */,
 				FB8560F01ED1CEA000B1B8C1 /* ViewController.swift */,
 				FB8560F21ED1CEA000B1B8C1 /* Main.storyboard */,
@@ -62,6 +69,14 @@
 				FB8560FA1ED1CEA000B1B8C1 /* Info.plist */,
 			);
 			path = KEKKEKEKKEKEK;
+			sourceTree = "<group>";
+		};
+		FB8561001ED1CECF00B1B8C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB8561011ED1CED000B1B8C1 /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +111,13 @@
 				TargetAttributes = {
 					FB8560EA1ED1CEA000B1B8C1 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = QCCRA973W5;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +146,7 @@
 			files = (
 				FB8560F91ED1CEA000B1B8C1 /* LaunchScreen.storyboard in Resources */,
 				FB8560F61ED1CEA000B1B8C1 /* Assets.xcassets in Resources */,
+				FB8561041ED1DF8900B1B8C1 /* scream.aiff in Resources */,
 				FB8560F41ED1CEA000B1B8C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QCCRA973W5;
 				INFOPLIST_FILE = KEKKEKEKKEKEK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noodlecorp.ios.KEKKEKEKKEKEK;
@@ -272,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QCCRA973W5;
 				INFOPLIST_FILE = KEKKEKEKKEKEK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.noodlecorp.ios.KEKKEKEKKEKEK;
